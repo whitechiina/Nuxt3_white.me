@@ -1,0 +1,143 @@
+:root,
+html {
+  box-sizing: border-box;
+  cursor: default;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: inherit;
+  line-height: inherit;
+  background-repeat: no-repeat;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*
+ * Normalization
+ */
+
+abbr[title] {
+  text-decoration: underline; // Chrome 48+, Edge 12+, Internet Explorer 11-, Safari 9+
+  text-decoration: underline dotted; // Firefox 40+
+}
+
+audio:not([controls]) {
+  display: none; // Chrome 44-, iOS 8+, Safari 9+
+}
+
+b,
+strong {
+  font-weight: bolder; // Edge 12+, Safari 6.2+, and Chrome 18+
+}
+
+button {
+  -webkit-appearance: button; // iOS 8+
+  overflow: visible; // Internet Explorer 11-
+}
+
+button,
+input {
+  &::-moz-focus-inner {
+    border: 0; // Firefox 4+
+    padding: 0; // Firefox 4+
+  }
+
+  &:-moz-focusring {
+    outline: 1px dotted ButtonText; // Firefox 4+
+  }
+}
+
+button,
+select {
+  text-transform: none; // Firefox 40+, Internet Explorer 11-
+}
+
+details {
+  display: block; // Edge 12+, Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+
+}
+
+hr {
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+input {
+  border-radius: 0; // iOS 8+
+
+  &[type='button'],
+  &[type='reset'],
+  &[type='submit'] {
+    -webkit-appearance: button; // iOS 8+
+  }
+
+  &[type='number'] {
+    width: auto; // Firefox 36+
+  }
+
+  &[type='search'] {
+    -webkit-appearance: textfield; // Chrome 45+, Safari 9+
+
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      -webkit-appearance: none; // Chrome 45+, Safari 9+
+    }
+  }
+}
+
+main {
+  display: block; // Android 4.3-, Internet Explorer 11-, Windows Phone 8.1+
+}
+
+progress {
+  display: inline-block; // Internet Explorer 11-, Windows Phone 8.1+
+}
+
+summary {
+  display: block; // Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+
+}
+
+svg:not(:root) {
+  overflow: hidden; // Internet Explorer 11-
+}
+
+template {
+  display: none; // Android 4.3-, Internet Explorer 11-, iOS 7-, Safari 7-, Windows Phone 8.1+
+}
+
+textarea {
+  overflow: auto; // Edge 12+, Internet Explorer 11-
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+ul, ol { list-style:none; }

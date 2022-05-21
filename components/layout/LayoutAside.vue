@@ -1,6 +1,6 @@
 <template>
   <div>
-    123123
+    侧栏
   </div>
 </template>
 <script lang='ts' setup>
